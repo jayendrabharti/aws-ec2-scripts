@@ -1,0 +1,35 @@
+# Configuration files with sensitive data
+config.sh
+config.ps1
+
+# SSH Keys
+*.pem
+*.ppk
+*.key
+
+# AWS Credentials
+.aws/
+credentials
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.backup
