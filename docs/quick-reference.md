@@ -7,21 +7,24 @@ Quick commands for managing your AWS EC2 instance.
 ### Daily Operations
 
 ```powershell
+cd windows
+
 # Start instance
-.\scripts\windows\start.ps1
+.\start.ps1
 
 # Connect to instance
-.\scripts\windows\connect.ps1
+.\connect.ps1
 
 # Stop instance
-.\scripts\windows\stop.ps1
+.\stop.ps1
 ```
 
 ### Combined Commands
 
 ```powershell
+cd windows
 # Start and auto-connect (waits 30 seconds)
-.\scripts\windows\start.ps1; Start-Sleep -Seconds 30; .\scripts\windows\connect.ps1
+.\start.ps1; Start-Sleep -Seconds 30; .\connect.ps1
 ```
 
 ## Linux/macOS (Bash)
@@ -29,21 +32,24 @@ Quick commands for managing your AWS EC2 instance.
 ### Daily Operations
 
 ```bash
+cd linux
+
 # Start instance
-./scripts/linux/start.sh
+./start.sh
 
 # Connect to instance
-./scripts/linux/connect.sh
+./connect.sh
 
 # Stop instance
-./scripts/linux/stop.sh
+./stop.sh
 ```
 
 ### Combined Commands
 
 ```bash
+cd linux
 # Start and auto-connect (waits 30 seconds)
-./scripts/linux/start.sh && sleep 30 && ./scripts/linux/connect.sh
+./start.sh && sleep 30 && ./connect.sh
 
 # Stop after disconnecting
 # (Just run stop.sh after you exit SSH)
